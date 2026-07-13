@@ -1,0 +1,29 @@
+{
+  "irVersion": "1.0",
+  "project": "omniagent-panel",
+  "repository": "https://github.com/plexusone/omniagent-panel",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "maintainers": ["plexusone"],
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-07-13",
+      "highlights": [
+        { "description": "Initial release of multi-agent panel discussion system with LiveKit integration" }
+      ],
+      "added": [
+        { "description": "Multi-agent panel discussion system with coordinator and turn-taking", "commit": "8c0c9fb" },
+        { "description": "Panel agent with human and auto moderator modes", "commit": "ea8e01e" },
+        { "description": "HeyGen avatar integration for visual representation", "commit": "ea8e01e" },
+        { "description": "LiveKit room integration for real-time audio streaming", "commit": "ea8e01e" },
+        { "description": "Support for Anthropic Claude and OpenAI LLM providers", "commit": "ea8e01e" },
+        { "description": "Multi-provider TTS via omnivoice (OpenAI, ElevenLabs, etc.)", "commit": "ea8e01e" },
+        { "description": "Kubernetes deployment configuration with agentkit", "commit": "64b1eac" },
+        { "description": "Dockerfile with multi-stage build and opus support" },
+        { "description": "HTTP health endpoints for Kubernetes liveness and readiness probes" },
+        { "description": "Panel recording support with LiveKit Egress" }
+      ]
+    }
+  ]
+}
