@@ -1,0 +1,116 @@
+# Kubernetes Deployment Configuration for OmniAgent Panel
+#
+# Deploy using agentkit with the Kubernetes provider:
+#
+#   export AGENTKIT_DEPLOY_PROVIDER=kubernetes
+#   export KUBECONFIG=~/.kube/config
+#   go run ./deploy/cmd
+#
+# Or set provider in this file and run without env vars.
+
+stack:
+  name: omniagent-panel
+  project: omniagent-panel
+  description: Multi-agent panel discussion system with avatar support
+
+  image:
+    repository: ghcr.io/plexusone/omniagent-panel
+    tag: latest
+
+  resources:
+    cpu: "1"
+    memory: "2048"
+    port: 8080
+
+  environment:
+    # Panel Configuration
+    PANEL_MODE: "auto"
+    PANEL_SIZE: "3"
+    PANEL_TOPIC: "The future of AI agents"
+
+    # LLM Configuration
+    LLM_PROVIDER: "anthropic"
+    LLM_MODEL: "claude-sonnet-4-20250514"
+
+    # TTS Configuration
+    TTS_PROVIDER: "openai"
+
+    # Logging
+    LOG_LEVEL: "info"
+
+  secrets:
+    LIVEKIT_URL:
+      source: env
+      key: LIVEKIT_URL
+    LIVEKIT_API_KEY:
+      source: env
+      key: LIVEKIT_API_KEY
+    LIVEKIT_API_SECRET:
+      source: env
+      key: LIVEKIT_API_SECRET
+    ANTHROPIC_API_KEY:
+      source: env
+      key: ANTHROPIC_API_KEY
+    OPENAI_API_KEY:
+      source: env
+      key: OPENAI_API_KEY
+    HEYGEN_API_KEY:
+      source: env
+      key: HEYGEN_API_KEY
+
+  health_check:
+    path: /health
+    interval_seconds: 30
+    timeout_seconds: 5
+    healthy_threshold: 2
+    unhealthy_threshold: 3
+
+  scaling:
+    min_instances: 1
+    max_instances: 5
+    target_cpu_percent: 70
+
+  tags:
+    app: omniagent-panel
+    team: ai-platform
+    component: panel-discussion
+
+# Provider selection (kubernetes for cloud-agnostic K8s deployments)
+provider: kubernetes
+
+# Provider-specific configuration
+provider_config:
+  namespace: omniagent
+  service_type: ClusterIP
+  replicas: 1
+  create_namespace: true
+
+  # Ingress configuration (optional)
+  ingress_enabled: false
+  # ingress_host: panel.example.com
+  # ingress_class_name: nginx
+  # ingress_tls_enabled: true
+  # ingress_tls_secret_name: panel-tls
+
+  # Probes
+  liveness_probe:
+    http_path: /health
+    initial_delay_seconds: 10
+    period_seconds: 30
+  readiness_probe:
+    http_path: /ready
+    initial_delay_seconds: 5
+    period_seconds: 10
+
+  # Pod configuration
+  # service_account_name: omniagent-panel
+  # node_selector:
+  #   node-type: agent
+  # tolerations:
+  #   - key: "dedicated"
+  #     operator: "Equal"
+  #     value: "agent"
+  #     effect: "NoSchedule"
+
+# Pulumi backend (optional - defaults to local file backend)
+# pulumi_backend: "s3://my-bucket/pulumi"
