@@ -4,13 +4,13 @@ Multi-agent panel discussion system powered by LiveKit, LLMs, and optional AI av
 
 ## Features
 
-- **Panel Discussions** - Multiple AI panelists engage in dynamic discussions on any topic
-- **Dual Modes** - Human moderator mode or fully automated AI moderator mode
-- **Real-time Audio** - LiveKit integration for low-latency audio streaming
-- **AI Avatars** - Optional HeyGen avatar support for visual representation
-- **Flexible LLMs** - Support for Anthropic Claude and OpenAI models
-- **Multiple TTS Providers** - OpenAI, ElevenLabs, and more via omnivoice
-- **Kubernetes Ready** - Dockerfile with health endpoints for K8s deployment
+- 🎙️ **Panel Discussions** - Multiple AI panelists engage in dynamic discussions on any topic
+- 🔄 **Dual Modes** - Human moderator mode or fully automated AI moderator mode
+- 🔊 **Real-time Audio** - LiveKit integration for low-latency audio streaming
+- 🎭 **AI Avatars** - Optional HeyGen avatar support for visual representation
+- 🧠 **Flexible LLMs** - Support for Anthropic Claude and OpenAI models
+- 🗣️ **Multiple TTS Providers** - OpenAI, ElevenLabs, and more via omnivoice
+- ☸️ **Kubernetes Ready** - Dockerfile with health endpoints for K8s deployment
 
 ## Installation
 
