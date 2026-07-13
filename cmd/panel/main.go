@@ -49,6 +49,7 @@ import (
 	"bytes"
 	"context"
 	"encoding/binary"
+	"flag"
 	"fmt"
 	"log"
 	"net/url"
@@ -73,6 +74,26 @@ import (
 )
 
 func main() {
+	// Parse command-line flags
+	healthCheck := flag.Bool("health-check", false, "Run health check and exit")
+	healthPort := flag.Int("health-port", 8080, "Port for health check endpoints")
+	flag.Parse()
+
+	// Health check mode - used by Dockerfile HEALTHCHECK
+	if *healthCheck {
+		if err := RunHealthCheck(*healthPort); err != nil {
+			fmt.Fprintf(os.Stderr, "Health check failed: %v\n", err)
+			os.Exit(1)
+		}
+		fmt.Println("Health check passed")
+		os.Exit(0)
+	}
+
+	// Start health server
+	healthServer := NewHealthServer(*healthPort)
+	healthServer.Start()
+	fmt.Printf("Health server listening on :%d\n", *healthPort)
+
 	// Load config from environment
 	serverURL := os.Getenv("LIVEKIT_URL")
 	apiKey := os.Getenv("LIVEKIT_API_KEY")
@@ -147,6 +168,9 @@ func main() {
 		log.Fatalf("Failed to create room: %v", err)
 	}
 
+	// Mark service as ready after room creation
+	healthServer.SetReady(true)
+
 	// Create shared LLM client
 	llmClient := NewLLMClient(llmProvider, llmKey, llmModel)
 
@@ -167,9 +191,19 @@ func main() {
 		runHumanMode(ctx, serverURL, apiKey, apiSecret, roomName, roomClient, coordinator, panelists, llmProvider, llmModel)
 	}
 
+	// Mark as not ready during cleanup
+	healthServer.SetReady(false)
+
 	// Cleanup
 	if err := roomClient.DeleteRoom(context.Background(), roomName); err != nil {
 		log.Printf("Error deleting room: %v", err)
+	}
+
+	// Stop health server
+	shutdownCtx, shutdownCancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer shutdownCancel()
+	if err := healthServer.Stop(shutdownCtx); err != nil {
+		log.Printf("Error stopping health server: %v", err)
 	}
 
 	fmt.Println("Goodbye!")
