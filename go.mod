@@ -4,7 +4,7 @@ go 1.26.4
 
 require (
 	github.com/livekit/protocol v1.49.0
-	github.com/livekit/server-sdk-go/v2 v2.18.0
+	github.com/livekit/server-sdk-go/v2 v2.18.1
 	github.com/pion/webrtc/v4 v4.2.16
 	github.com/plexusone/agentkit v0.7.0
 	github.com/plexusone/agentkit-k8s-pulumi v0.1.0
