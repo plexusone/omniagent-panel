@@ -3,7 +3,7 @@ module github.com/plexusone/omniagent-panel
 go 1.26.4
 
 require (
-	github.com/livekit/protocol v1.50.0
+	github.com/livekit/protocol v1.50.4
 	github.com/livekit/server-sdk-go/v2 v2.18.1
 	github.com/pion/webrtc/v4 v4.2.17
 	github.com/plexusone/agentkit v0.7.0
