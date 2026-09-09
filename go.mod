@@ -3,7 +3,7 @@ module github.com/plexusone/omniagent-panel
 go 1.26.6
 
 require (
-	github.com/livekit/protocol v1.50.4
+	github.com/livekit/protocol v1.51.0
 	github.com/livekit/server-sdk-go/v2 v2.18.1
 	github.com/pion/webrtc/v4 v4.2.20
 	github.com/plexusone/agentkit v0.7.0
@@ -121,6 +121,7 @@ require (
 	github.com/openai/openai-go v1.12.0 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
+	github.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
 	github.com/pgavlin/fx/v2 v2.0.12 // indirect
 	github.com/pion/datachannel v1.6.2 // indirect
