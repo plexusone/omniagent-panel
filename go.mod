@@ -3,7 +3,7 @@ module github.com/plexusone/omniagent-panel
 go 1.26.6
 
 require (
-	github.com/livekit/protocol v1.50.4
+	github.com/livekit/protocol v1.52.0
 	github.com/livekit/server-sdk-go/v2 v2.18.1
 	github.com/pion/webrtc/v4 v4.2.20
 	github.com/plexusone/agentkit v0.7.0
@@ -98,7 +98,7 @@ require (
 	github.com/livekit/mageutil v0.0.0-20250511045019-0f1ff63f7731 // indirect
 	github.com/livekit/media-sdk v0.1.1 // indirect
 	github.com/livekit/mediatransportutil v0.0.0-20260821083140-f234b534b095 // indirect
-	github.com/livekit/psrpc v0.7.6 // indirect
+	github.com/livekit/psrpc v0.7.7 // indirect
 	github.com/lucasb-eyer/go-colorful v1.4.1 // indirect
 	github.com/magefile/mage v1.17.2 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
@@ -121,6 +121,7 @@ require (
 	github.com/openai/openai-go v1.12.0 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
+	github.com/petermattis/goid v0.0.0-20260820044319-269ab09b5261 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
 	github.com/pgavlin/fx/v2 v2.0.12 // indirect
 	github.com/pion/datachannel v1.6.2 // indirect
