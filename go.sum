@@ -44,10 +44,6 @@ github.com/blang/semver v3.5.1+incompatible h1:cQNTCjp13qL8KC3Nbxr/y2Bqb63oX6wdn
 github.com/blang/semver v3.5.1+incompatible/go.mod h1:kRBLl5iJ+tD4TcOOxsy/0fnwebNt5EWlYSAyrTnjyyk=
 github.com/brianvoe/gofakeit/v6 v6.28.0 h1:Xib46XXuQfmlLS2EXRuJpqcw8St6qSZz75OUo0tgAW4=
 github.com/brianvoe/gofakeit/v6 v6.28.0/go.mod h1:Xj58BMSnFqcn/fAQeSK+/PLtC5kSb7FJIq4JyGa8vEs=
-github.com/bsm/ginkgo/v2 v2.12.0 h1:Ny8MWAHyOepLGlLKYmXG4IEkioBysk6GpaRTLC8zwWs=
-github.com/bsm/ginkgo/v2 v2.12.0/go.mod h1:SwYbGRRDovPVboqFv0tPTcG1sN61LM1Z4ARdbAV9g4c=
-github.com/bsm/gomega v1.27.10 h1:yeMWxP2pV2fG3FgAODIY8EiRE3dy0aeFYt4l7wh6yKA=
-github.com/bsm/gomega v1.27.10/go.mod h1:JyEr/xRbxbtgWNi8tIEVPUYZ5Dzef52k01W3YH0H+O0=
 github.com/cenkalti/backoff/v5 v5.0.3 h1:ZN+IMa753KfX5hd8vVaMixjnqRZ3y8CuJKRKj1xcsSM=
 github.com/cenkalti/backoff/v5 v5.0.3/go.mod h1:rkhZdG3JZukswDf7f0cwqPNk4K0sa+F97BxZthm/crw=
 github.com/cespare/xxhash/v2 v2.3.0 h1:UL815xU9SqsFlibzuggzjXhog7bL6oX9BbNZnL2UFvs=
@@ -232,10 +228,10 @@ github.com/livekit/media-sdk v0.1.1 h1:d0glitmWU5ncIgsW/6wG4Q4iOEcpwINGl85mQjwnK
 github.com/livekit/media-sdk v0.1.1/go.mod h1:TuYRjSepaakL6ATsM9V2VMuksewW1PlhA32BG7Pxty0=
 github.com/livekit/mediatransportutil v0.0.0-20260821083140-f234b534b095 h1:BcliKAXoMhl/nWmzQweQ5kmh4Qqagxl4s3Z5pvM/7AY=
 github.com/livekit/mediatransportutil v0.0.0-20260821083140-f234b534b095/go.mod h1:o8CFmAdrVwzJNOCsQCLUzXRjokkufNshnQHOe4fRaqU=
-github.com/livekit/protocol v1.50.4 h1:Pzg9p1lpu9TcxUFJqIlUGNP6m7mX8PBT+ETxXRpnmZ8=
-github.com/livekit/protocol v1.50.4/go.mod h1:jO+y05AU9Ec4JswDyuzKCZ4bhziOS0CzMqgnbj60Dzs=
-github.com/livekit/psrpc v0.7.6 h1:YG07lUMTtf+eaYI2goT9zcVZ0kGJNWN1K6ETNFtv1HQ=
-github.com/livekit/psrpc v0.7.6/go.mod h1:DMw15RO7x5XmcgfwzWJYk2In605kx+wu1QRVbPfzf8M=
+github.com/livekit/protocol v1.52.1 h1:w8wRjRlj/57AJBxwomEzpEMzf+lT0qOoLQLO7awdTMU=
+github.com/livekit/protocol v1.52.1/go.mod h1:t5CV/LCsWbI9zsSTHTJKDyLtByqvvVkioSP7jgqpIGA=
+github.com/livekit/psrpc v0.8.0 h1:uo3x+DL8pK2OIaCxg/s9sLUO2cIocS5HwdPhhI+m+fQ=
+github.com/livekit/psrpc v0.8.0/go.mod h1:6KnU8vULoizX0Er9NNfeKJDV8ug87j3fuo19M0bhj6Q=
 github.com/livekit/server-sdk-go/v2 v2.18.1 h1:/u0JVII+ErGCivHnAGr6di0wl0NYsfcRvDzEtTAFovo=
 github.com/livekit/server-sdk-go/v2 v2.18.1/go.mod h1:su0IvJNWTFCHVwmqpsFvxHfXWs9pn26ms+cKBR1jILU=
 github.com/localtunnel/go-localtunnel v0.0.0-20170326223115-8a804488f275 h1:IZycmTpoUtQK3PD60UYBwjaCUHUP7cML494ao9/O8+Q=
@@ -299,6 +295,8 @@ github.com/opentracing/opentracing-go v1.2.0 h1:uEJPy/1a5RIPAJ0Ov+OIO8OxWu77jEv+
 github.com/opentracing/opentracing-go v1.2.0/go.mod h1:GxEUsuufX4nBwe+T+Wl9TAgYrxe9dPLANfrWvHYVTgc=
 github.com/ory/dockertest/v4 v4.0.0 h1:i19aFsO/VXE0VrMk4ifnKW4G/KIJ93PCjLOslxXoPME=
 github.com/ory/dockertest/v4 v4.0.0/go.mod h1:b5Ofu8VIxWNhXFvQcLu17pRNQdoUBKtXBW74G4Ygzx8=
+github.com/petermattis/goid v0.0.0-20260820044319-269ab09b5261 h1:lcWAnrqr2nNfDiArwFNHCE4787Mw2tCdVSOXCru0/0E=
+github.com/petermattis/goid v0.0.0-20260820044319-269ab09b5261/go.mod h1:pxMtw7cyUw6B2bRH0ZBANSPg+AoSud1I1iyJHI69jH4=
 github.com/pgavlin/fx v0.1.6 h1:r9jEg69DhNoCd3Xh0+5mIbdbS3PqWrVWujkY76MFRTU=
 github.com/pgavlin/fx v0.1.6/go.mod h1:KWZJ6fqBBSh8GxHYqwYCf3rYE7Gp2p0N8tJp8xv9u9M=
 github.com/pgavlin/fx/v2 v2.0.12 h1:SjjaJ68Dt8Z4zHwOpY/RPijd7lShs6xYupJbF9ra00M=
