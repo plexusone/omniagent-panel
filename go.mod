@@ -1,10 +1,10 @@
 module github.com/plexusone/omniagent-panel
 
-go 1.26.6
+go 1.26.8
 
 require (
-	github.com/livekit/protocol v1.50.4
-	github.com/livekit/server-sdk-go/v2 v2.18.1
+	github.com/livekit/protocol v1.51.1-0.20260910121219-271d9cde3897
+	github.com/livekit/server-sdk-go/v2 v2.19.0
 	github.com/pion/webrtc/v4 v4.2.24
 	github.com/plexusone/agentkit v0.7.0
 	github.com/plexusone/agentkit-k8s-pulumi v0.1.0
@@ -21,7 +21,7 @@ require (
 	cel.dev/cel-go v0.32.0 // indirect
 	cel.dev/expr v0.25.3 // indirect
 	github.com/BurntSushi/toml v1.6.0 // indirect
-	github.com/Microsoft/go-winio v0.6.2 // indirect
+	github.com/Microsoft/go-winio v0.6.3-0.20251027160822-ad3df93bed29 // indirect
 	github.com/ProtonMail/go-crypto v1.5.1 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
 	github.com/antlr4-go/antlr/v4 v4.13.1 // indirect
@@ -121,6 +121,7 @@ require (
 	github.com/openai/openai-go v1.12.0 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
+	github.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
 	github.com/pgavlin/fx/v2 v2.0.12 // indirect
 	github.com/pion/datachannel v1.6.3 // indirect
