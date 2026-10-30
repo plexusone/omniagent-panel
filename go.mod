@@ -3,7 +3,7 @@ module github.com/plexusone/omniagent-panel
 go 1.26.8
 
 require (
-	github.com/livekit/protocol v1.51.1-0.20260910121219-271d9cde3897
+	github.com/livekit/protocol v1.53.1
 	github.com/livekit/server-sdk-go/v2 v2.19.0
 	github.com/pion/webrtc/v4 v4.2.24
 	github.com/plexusone/agentkit v0.7.0
@@ -92,13 +92,13 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/jxskiss/base62 v1.1.0 // indirect
 	github.com/kevinburke/ssh_config v1.6.0 // indirect
-	github.com/klauspost/compress v1.20.0 // indirect
+	github.com/klauspost/compress v1.20.1 // indirect
 	github.com/klauspost/cpuid/v2 v2.4.0 // indirect
 	github.com/lithammer/shortuuid/v4 v4.3.0 // indirect
 	github.com/livekit/mageutil v0.0.0-20250511045019-0f1ff63f7731 // indirect
 	github.com/livekit/media-sdk v0.1.1 // indirect
 	github.com/livekit/mediatransportutil v0.0.0-20260821083140-f234b534b095 // indirect
-	github.com/livekit/psrpc v0.7.6 // indirect
+	github.com/livekit/psrpc v0.8.2 // indirect
 	github.com/lucasb-eyer/go-colorful v1.4.1 // indirect
 	github.com/magefile/mage v1.17.2 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
@@ -113,15 +113,12 @@ require (
 	github.com/muesli/cancelreader v0.2.2 // indirect
 	github.com/muesli/termenv v0.16.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/nats-io/nats.go v1.53.1 // indirect
-	github.com/nats-io/nkeys v0.4.16 // indirect
-	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/nxadm/tail v1.4.11 // indirect
 	github.com/ogen-go/ogen v1.24.0 // indirect
 	github.com/openai/openai-go v1.12.0 // indirect
 	github.com/opentracing/basictracer-go v1.1.0 // indirect
 	github.com/opentracing/opentracing-go v1.2.0 // indirect
-	github.com/petermattis/goid v0.0.0-20260725062400-500c67a39b75 // indirect
+	github.com/petermattis/goid v0.0.0-20260820044319-269ab09b5261 // indirect
 	github.com/pgavlin/fx v0.1.6 // indirect
 	github.com/pgavlin/fx/v2 v2.0.12 // indirect
 	github.com/pion/datachannel v1.6.3 // indirect
@@ -160,7 +157,6 @@ require (
 	github.com/pulumi/pulumi-kubernetes/sdk/v4 v4.34.0 // indirect
 	github.com/pulumi/pulumi/sdk/v3 v3.261.0 // indirect
 	github.com/puzpuzpuz/xsync/v4 v4.5.0 // indirect
-	github.com/redis/go-redis/v9 v9.23.0 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/rogpeppe/go-internal v1.16.0 // indirect
 	github.com/santhosh-tekuri/jsonschema/v5 v5.3.1 // indirect
