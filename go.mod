@@ -9,9 +9,9 @@ require (
 	github.com/plexusone/agentkit v0.7.0
 	github.com/plexusone/agentkit-k8s-pulumi v0.1.0
 	github.com/plexusone/omni-livekit v0.5.1
-	github.com/plexusone/omnimeet-core v0.1.0
+	github.com/plexusone/omnimeet-core v0.2.0
 	github.com/plexusone/omnivoice v0.13.0
-	github.com/plexusone/omnivoice-core v0.16.1
+	github.com/plexusone/omnivoice-core v0.18.1
 )
 
 require (
@@ -200,19 +200,19 @@ require (
 	go.uber.org/zap v1.28.0 // indirect
 	go.uber.org/zap/exp v0.3.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/crypto v0.57.0 // indirect
-	golang.org/x/exp v0.0.0-20261007192929-f45ad48fbe92 // indirect
-	golang.org/x/mod v0.41.0 // indirect
-	golang.org/x/net v0.59.0 // indirect
-	golang.org/x/sync v0.23.0 // indirect
-	golang.org/x/sys v0.48.0 // indirect
-	golang.org/x/term v0.46.0 // indirect
-	golang.org/x/text v0.42.0 // indirect
+	golang.org/x/crypto v0.58.0 // indirect
+	golang.org/x/exp v0.0.0-20261014143641-f0251eb4aa3e // indirect
+	golang.org/x/mod v0.42.0 // indirect
+	golang.org/x/net v0.62.0 // indirect
+	golang.org/x/sync v0.24.0 // indirect
+	golang.org/x/sys v0.49.0 // indirect
+	golang.org/x/term v0.47.0 // indirect
+	golang.org/x/text v0.43.0 // indirect
 	golang.org/x/time v0.15.0 // indirect
-	golang.org/x/tools v0.51.0 // indirect
+	golang.org/x/tools v0.52.0 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20260908043556-f8649ddbbfe6 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20261005182115-fad411399dd8 // indirect
-	google.golang.org/grpc v1.84.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20261026165753-2ffab32bce7e // indirect
+	google.golang.org/grpc v1.85.0 // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	gopkg.in/hraban/opus.v2 v2.0.0-20230925203106-0188a62cb302 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
